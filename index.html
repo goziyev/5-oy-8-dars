@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="website icon" type="png" href="https://logopond.com/logos/1fd53a36b19dd7e88736d202efe37ed3.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>5-oy 8-dars vazifa</title>
+</head>
+<body>
+    <div class="weather-card">
+        <div class="search">
+          <input type="search" id="weather" placeholder="enter city name" spellcheck="false">
+          <button id="btn">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <div class="weather">
+          <img class="weather-icon" src="https://static.vecteezy.com/system/resources/previews/024/825/182/non_2x/3d-weather-icon-day-with-rain-free-png.png" alt="...">
+          <h1 class="temp" id="temperatura">15°C </h1>
+          <h2 class="city" id="city-name">New York</h2>
+          <div class="details">
+            <div style="display: flex;" class="col">
+              <img class="humi" src="https://static-00.iconduck.com/assets.00/humidity-icon-2048x1675-xxsge5os.png">
+              <div class="info">
+                <p class="humidity" id="humidiy">50%</p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="https://cdn-icons-png.flaticon.com/512/136/136712.png">
+              <div class="info">
+                <p class="wind" id="wind">15 km/h</p>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
