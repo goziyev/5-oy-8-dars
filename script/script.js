@@ -3,6 +3,7 @@ const weather = document.getElementById("weather");
 const cityName = document.getElementById("city-name")
 const humidiy = document.getElementById("humidiy")
 const wind = document.getElementById("wind")
+const temperatura  = document.getElementById('temperatura')
 
 const key = "02cddfd6a93eebab321fa6775bc5a605";
 
@@ -18,7 +19,8 @@ const getCity  = async (city) => {
 async function elements(data){
     cityName.innerHTML  = data.name;
     humidiy.innerHTML  = data.main.humidity + "%";
-    wind.innerHTML = data.main.wind.speed + " Km/h"
+    wind.innerHTML = data.wind.speed + " Km/h"
+    temperatura.innerHTML = data.main.temp + "°C"
 }
 
 function validate(weather) {
